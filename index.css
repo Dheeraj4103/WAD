@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    padding: 10px;
+}
+
+form label {
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+div.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    width: 30%;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    align-content: space-between;
+    
+}
+
+form label:hover{
+    background-color: #F0EEED;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+}
+
+.ipt {
+    /* width: 100%; */
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.ipt:hover {
+    background-color: #F0EEED;
+    color: black;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border-radius: 10px; */
+}
+
+::placeholder {
+    color: black;
+}
+.btn {
+    margin-top: 10px;
+    background-color: #537FE7;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: medium;
+}
