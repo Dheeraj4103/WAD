@@ -1,0 +1,1 @@
+Ajax get method without jquery
