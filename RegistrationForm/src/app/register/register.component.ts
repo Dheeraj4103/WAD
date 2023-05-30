@@ -12,9 +12,12 @@ export class RegisterComponent implements OnInit {
       
   }
   submit(result: any) {
+    // localStorage.clear();
     console.log("You have entered:- ", result.value.email);
-    localStorage.setItem("username", result.value.email);
-    localStorage.setItem("password", result.value.password);
+    window.localStorage.setItem("username", result.value.email);
+    window.localStorage.setItem("firstname", result.value.firstname);
+    window.localStorage.setItem("lastname", result.value.lastname);
+    window.localStorage.setItem("password", result.value.password);
     console.log(localStorage);
     
   }

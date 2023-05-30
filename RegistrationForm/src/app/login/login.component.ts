@@ -13,7 +13,12 @@ export class LoginComponent implements OnInit{
       
   }
   submit(result: any) {
-    console.log(localStorage, result.value.username);
+    if (result.value.username === localStorage.getItem('username') && result.value.password === localStorage.getItem('password')) {
+      alert("Login Successful....");
+    } else {
+      alert("Login Failed ...");
+    }
+    
     
     
   }
