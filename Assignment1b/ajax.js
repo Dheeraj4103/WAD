@@ -15,7 +15,7 @@ btn1.onclick = () => {
 $(document).ready(function () {
   $("#btn2").click(() => {
     $.get("data2.txt", (data, status) => {
-      $("#with").text(data);
+      $("#with").ap(data);
     });
   });
 });

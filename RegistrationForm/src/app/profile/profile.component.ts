@@ -7,8 +7,8 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class ProfileComponent {
   constructor() {
-    const div1 = document.getElementById('main');
-    console.log(div1);
-    div1?.innerHTML || localStorage.getItem('username');
+    const name = ` <h1>${localStorage.getItem('firstname')} ${localStorage.getItem('lastname')}</h1>`;
+    document.write(name);
+    
   }
 }
