@@ -15,11 +15,24 @@
         });
       });
       $("#post").click(function () {
-        $.post("./data.txt", "Im in index.html", function (data) {
+        $.post("./data.txt", {text:"Im in index.html"}, function (data) {
           $("#p").text = data;
         });
       });
     });
+
+    // $(document).ready(() => {
+    //   $('#get').click(() =>{
+    //     $.get('./data.txt', (data) => {
+    //       $('#g').text(data);
+    //     })
+    //   });
+    //   $('#post').click(() => {
+    //     $.post('./data.txt', 'Im in index.html', (data) => {
+    //       $('#post').text(data);
+    //     })
+    //   })
+    // })
   </script>
   <body>
     <button id="get">Ajax Get</button>

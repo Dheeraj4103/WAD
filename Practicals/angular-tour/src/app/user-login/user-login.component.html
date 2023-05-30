@@ -7,20 +7,23 @@
     <title>User-login</title>
   </head>
   <body>
-    <div class="signup">
+    <h1 style="text-align: center;">Login and SignUp</h1>
+    <div class="main">
       <form action="">
         <input type="text" name="username" placeholder="User Name" [(ngModel)]="signupObj.username" />
         <input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email" />
         <input type="password" name="password" placeholder="Password" [(ngModel)]="signupObj.password"/>
         <button (click)="onSignUp()">Sign up</button>
       </form>
-    </div>
-    <div class="login">
+    <!-- </div> -->
+    <!-- <div class="login"> -->
       <form action="">
         <input type="text" name="username" placeholder="User Name" [(ngModel)]="loginObj.username" />
         <input type="password" name="password" placeholder="Password" [(ngModel)]="loginObj.password" />
         <button (click)="onLogin()">Login</button>
       </form>
     </div>
+
+    <!-- </div> -->
   </body>
 </html>

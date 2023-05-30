@@ -1,1 +1,9 @@
 Ajax get method without jquery
+
+
+$.get('./data1.txt', (data) => {
+        $('#g').text(data);
+      });
+      $.post('./data1.txt', (data) => {
+        $()
+      })

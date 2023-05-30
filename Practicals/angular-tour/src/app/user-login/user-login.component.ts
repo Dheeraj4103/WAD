@@ -28,7 +28,7 @@ export class UserLoginComponent implements OnInit{
   }
 
   onSignUp() {
-    this.signupUsers = []
+    // this.signupUsers = [] 
     this.signupUsers.push(this.signupObj);
     localStorage.setItem('userinfo', JSON.stringify(this.signupUsers));
     this.signupObj = {
@@ -43,7 +43,19 @@ export class UserLoginComponent implements OnInit{
     );
     console.log(this.signupUsers, this.loginObj)
     if (isUserExist != undefined) {
-      alert("Login Successfull !!");
+      // alert("Login Successfull !!");
+      const h1 = document.createElement('h1');
+      h1.innerText = "Profile Page";
+      const username = document.createElement('h2');
+      username.innerText = `Username: ${isUserExist.username}`;
+      const email = document.createElement('h2');
+      email.innerText = `Username: ${isUserExist.email}`;
+      const profile = document.createElement('div');
+      profile.appendChild(h1);
+      profile.appendChild(username);
+      profile.appendChild(email)
+      document.write(profile.innerHTML || "LoginSuccessful")
+
     } else {
       alert("Wrong Credentials");
     }
